@@ -39,10 +39,25 @@ def tuDuyCpp(inputPasswork):
             print(f"mật khẩu {inputPasswork} hợp lệ")
             break
 
+def tuDuyPython():
+    while True:
+        password = input("Nhập mật khẩu: ")
 
-inputPasswork = input("nhập vào paswork :")
+        # kiểm tra điều kiện
+        checkLen = len(password) >= 8
+        checkNum = any(char.isdigit() for char in password)  # có ít nhất 1 chữ số
+        checkSpace = " " not in password  # không chứa khoảng trắng
 
-tuDuyCpp(inputPasswork)
+        if checkLen and checkNum and checkSpace:
+            print(f"Mật khẩu '{password}' hợp lệ ✅")
+            break
+        else:
+            print("❌ Mật khẩu không hợp lệ, vui lòng nhập lại.")
+
+
+#inputPasswork = input("nhập vào paswork :")
+#tuDuyCpp(inputPasswork)
+tuDuyPython()
 
 
     
