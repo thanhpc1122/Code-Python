@@ -6,11 +6,11 @@
 
 # length = len(name)
 # index = name.find(" ")
-# name = name.capitalize()
+# name = name.capitalize() #làm cho ptu đầu tiên viết hoa các ptu phía sau in thường
 # name = name.upper()
 # name = name.lower()
-# result = name.isdigit()
-# result = name.isalpha()
+# result = name.isdigit() 
+# result = name.isalpha() # trả về true-false ,  nếu trong chuỗi tất cả các kí tự đề là chữ .
 # result = phone_number.count(" ")
 # phone_number = phone_number.replace("-", "")
 
